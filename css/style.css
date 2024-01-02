@@ -159,22 +159,39 @@ body {
 .hero {
     width: 100%;
     height: 50vh;
-    background-color: #fff;
-}
-
-.card {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 100%;
+    justify-content: space-around;
+    padding: 0vw 4vw;
 }
 
-.card div {
-    flex: 1;
-    background-color: #ccc;
-    margin: 10px;
+.skill{
+    font-size: 3.5vw;
     text-align: center;
-    padding: 20px;
+    margin-top:4vw ;
+}
+.skill span {
+    color:#1F5D8F;  
+}
+.hero div{
+    height: 90%;
+    width: 20%;
+    border: .2vw solid black;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #606775;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card1 img {
+    height: 70%;
+    
+   
 }
 
 @media (max-width: 600px) {
