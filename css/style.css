@@ -108,7 +108,6 @@ body {
     color: #fff;
     font-weight: 750;
 }
-
 .image {
     width: 100%;
     display: flex;
@@ -150,21 +149,12 @@ body {
     width: 3.5vw;
     align-items: center;
     justify-content: center;
-    margin-right: .2vw;
     background-color: #1FADFB;
+    margin-right: .2vw;
     color: #252627;
     font-size: 1.6vw;
 }
-
-.hero {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0vw 4vw;
-}
-
+/* this is hero section */
 .skill{
     font-size: 3.5vw;
     text-align: center;
@@ -173,26 +163,93 @@ body {
 .skill span {
     color:#1F5D8F;  
 }
+
+.hero {
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0vw 4vw;
+}
+
 .hero div{
-    height: 90%;
-    width: 20%;
+    height:22vw;
+    width: 20vw;
     border: .2vw solid black;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #606775;
+    background-color: rgba(120, 132, 156, 0.185);
 }
 .card1{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.card1 img {
-    height: 70%;
-    
-   
+.card_image   {
+    height: 17vw;
 }
+.btn_card{
+    height: 2vw;
+    width: 9vw;
+    outline: none;
+    border: .1vw solid black;
+    border-radius:2vw ;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 700;
+    background-image: linear-gradient(to right,  #C4D6FF,#1FADFB);
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_image2{
+    height: 16vw;
+    margin-bottom: 1.2vw;
+}
+.btn_card1{
+
+    height: 2vw;
+    width: 9vw;
+    outline: none;
+    border: .1vw solid black;
+    border-radius:2vw ;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 700;
+    background-image: linear-gradient(to right,  #C4D6FF,#1FADFB);
+}
+.card_image3{
+    height: 14vw;
+    margin-bottom: 3vw ;
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card_image4{
+    height: 17vw;
+
+}
+.card1 , .card2 , .card3:hover{
+    cursor: pointer;
+    background-color: hsla(220, 25%, 44%, 0.301);
+}
+.card1:hover{
+    cursor: pointer;
+    background-color: hsla(220, 25%, 44%, 0.301);
+}
+.card2:hover{
+    cursor: pointer;
+    background-color: hsla(220, 25%, 44%, 0.301);
+}
+
+
 
 @media (max-width: 600px) {
     .logo {
@@ -258,7 +315,45 @@ body {
         height: auto;
     }
 
-    .hero {
-        height: 100vh;
+    .hero {   
+        height: 400vw;   
+        width: 100%;       
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hero div{
+        height:100vw ;
+        width: 90%;
+        margin-bottom: 3vw;
+    }
+    .card_image, .card_image2,  .card_image4{
+        height: 70vw;
+    }
+    .card_image3{
+        height: 55vw;
+    }
+    .skill{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+        text-align: center;
+        margin-top:4vw ;
+    }
+    .btn_card1 {
+        height: 30px;
+        width: 110px;
+        margin-top: 20px;
+    }
+    .btn_card{
+        height: 30px;
+        width: 110px;
+        margin-top: 20px;
+    }
+    .btn_card3{
+        width: 110px;
+        margin-top: 70px;
+    }
+    .btn_card4{
+        width: 150px;
     }
 }
