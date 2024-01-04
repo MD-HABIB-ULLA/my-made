@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    background: linear-gradient(to right, #1FADFB, #C4D6FF);
+    height: 100%;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 2vw;
+    backdrop-filter: blur(10px);
+}
+#username{
+    margin-bottom: -2vw;
+}
+#username, #password{
+    height: 3vw;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 2vw;
+    padding: 0vw 1.3vw;
+    font-size: 1.3vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#password:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#username:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.login h1{
+    font-size: 3vw;
+    color: #073b4c;
+}
+.login button{
+    width: 6vw;
+    height: 2.5vw;
+    border-radius: 2vw;
+    outline: none;
+    border: none;
+    background-color: #1FADFB;
+    color: #073b4c;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.login button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+@media (max-width:600px) {
+    .login{
+        height: 45%;
+        width: 80%;
+        border-radius: 5vw;
+    }
+    #username, #password{
+        height: 10vw;
+        width: 80%;
+        border-radius: 5vw;
+        padding: 0vw 3vw;
+        font-size: 4vw;
+    }
+    .login h1{
+        font-size: 10vw;
+    }
+    .login button{
+        width: 20vw;
+        height: 7vw;
+        font-size: 4vw;
+        border-radius: 5vw;
+    }
+    #username{
+        margin-bottom: -6vw;
+    }
+}
